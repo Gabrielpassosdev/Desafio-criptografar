@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Protest+Strike&family=Sixtyfour&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black url(imagens/pg2back.jpg) center center no-repeat fixed;
+  background-size: cover;
+}
+
+.conteudo__principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+}
+
+.conteudo__texto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+textarea {
+  font-family: "Sixtyfour", sans-serif;
+  background-color: #0c484aaf;
+  box-shadow: 0px 0px 3px black;
+  font-size: 1.5rem;
+}
+
+.conteudo__texto > p {
+  font-size: 1rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.recebe__texto {
+  width: 100%;
+  height: 624px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 1px solid black;
+  resize: none;
+}
+
+.conteudo__texto__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.buttons {
+  height: 70px;
+  width: 330px;
+  border-radius: 25px;
+  margin: 0px 50px;
+  background-color: #0a3871;
+  font-size: 1rem;
+  color: white;
+  border: 1px solid black;
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button:hover {
+  background-color: #062448;
+  outline: 2px solid black;
+  font-size: 1.5rem;
+  outline-offset: -2px;
+  transition: 0.4s;
+}
+
+.conteudo__texto__criptografado {
+  width: 100%;
+  height: 186px;
+}
+
+.input__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.mensagem__texto__vazio {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.button__copiar {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  height: 70px;
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid black;
+  background-color: #606cb6b4;
+  font-size: 1rem;
+  color: white;
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0px;
+  display: none;
+}
+
+.button__copiar:hover {
+  background-color: #5053578a;
+  outline: 2px solid black;
+  font-size: 1.5rem;
+  outline-offset: -2px;
+  transition: 0.4s;
+}
+.retorna__texto {
+  height: 186px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #6474d9a4;
+  border-radius: 15px;
+  border: 1px solid black;
+  font-family: "Sixtyfour", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.conteudo__texto {
+  flex-direction: column;
+}
+
+.recebe__texto {
+  width: 100%;
+}
+
+.input__container {
+  flex-direction: column;
+}
+
+.retorna__texto {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+#mensagem__inicio {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .conteudo__texto__button {
+    display: inline-block;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+
+  .button__copiar {
+    width: 330px;
+  }
+  .conteudo__principal {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens sejam distribuídos em várias linhas */
+    justify-content: space-between;
+    gap: 80px;
+  }
+
+  .conteudo__texto,
+  .conteudo__texto__criptografado {
+    box-sizing: border-box; /* Inclui a largura da borda e do preenchimento no tamanho total */
+    padding: 20px; /* Adiciona um preenchimento interno */
+  }
+
+  .input__container {
+    position: relative;
+  }
+
+  .mensagem__texto__vazio {
+    position: absolute;
+
+    height: 100%;
+  }
+
+  .mensagem__texto__vazio > h1 {
+    margin-top: 300px;
+  }
+
+  .button__copiar {
+    position: absolute;
+    top: 600px;
+    left: 115px;
+  }
+
+  .conteudo__texto {
+    width: 60vw;
+    height: 100vh;
+  }
+  .conteudo__texto__criptografado {
+    width: 30vw;
+  }
+
+  .retorna__texto {
+    height: 700px;
+    width: 500px;
+  }
+  .conteudo__texto__button {
+    display: inline-block;
+    margin: auto;
+  }
+}

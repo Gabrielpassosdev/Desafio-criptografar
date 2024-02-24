@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body.tela__inicio {
+  position: relative;
+  background: black url(imagens/background4.jpg) center center no-repeat fixed;
+
+  background-size: cover;
+}
+
+main.conteudo__inicio {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+
+  background-color: rgba(19, 19, 19, 0.904);
+  border-radius: 16px;
+  box-shadow: 1px 1px 5px black;
+}
+
+.imagem__inicio {
+  width: 250px;
+  border-radius: 100%;
+  margin: 15% 10px 10px 10px;
+  box-shadow: 1px 1px 3px black;
+}
+
+.nome__inicio {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  color: #42cba5;
+  font-size: 62px;
+  text-shadow: 1px 1px 2px;
+  margin-bottom: 40px;
+}
+
+.link__inicio {
+  text-decoration: none;
+  color: white;
+  background-color: #e50914;
+  font-family: "Heebo", sans-serif;
+
+  padding: 20px 40px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 3px black;
+  text-shadow: 0px 0px 2px;
+}
+
+.link__inicio:hover {
+  background-color: #91060d;
+  text-shadow: 1px 1px 5px;
+  animation: pulsate 0.8s ease-in-out infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px #91060d, 0 0 50px #91060d;
+  }
+}

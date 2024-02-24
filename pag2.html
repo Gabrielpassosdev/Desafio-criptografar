@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="shortcut icon" href="imagens/favicon1.ico" type="image/x-icon" />
+
+    <title>Rede Criptografada</title>
+  </head>
+
+  <body>
+    <main class="conteudo__principal">
+      <section class="conteudo__texto">
+        <textarea
+          id="textoOriginal"
+          type="text"
+          placeholder="Digite sua mensagem"
+          class="recebe__texto"
+          onclick="toggleAtivo(this)"
+        ></textarea>
+
+        <p class="aviso">Apenas letras minúsculas e sem acentos</p>
+
+        <div class="conteudo__texto__button">
+          <button
+            class="buttons"
+            class="button__criptografa"
+            onclick="criptografarTexto()"
+          >
+            Criptografar
+          </button>
+          <button
+            onclick="descriptografarTexto()"
+            class="buttons"
+            class="button__descriptografa"
+          >
+            Descriptografar
+          </button>
+        </div>
+      </section>
+      <section class="conteudo__texto__criptografado">
+        <div class="input__container">
+          <input
+            id="exibe__texto"
+            type="text"
+            class="retorna__texto"
+            onclick="toggleAtivo(this)"
+            readonly
+          />
+          <div class="mensagem__texto__vazio">
+            <div id="mensagem__inicio">
+              <h1>Nenhuma mensagem encontrada</h1>
+              <p>
+                Digite um texto que você deseja Criptografar ou Descriptografar
+              </p>
+            </div>
+            <button id="copiar" class="button__copiar" onclick="copiarTexto()">
+              Copiar
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
