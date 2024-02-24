@@ -56,6 +56,9 @@ function descriptografarTexto() {
 
   // Exibir o texto descriptografado no input
   document.getElementById("exibe__texto").value = textoOriginal;
+
+  apagarMensagem();
+  revelaCopiar();
 }
 
 //função para realizar a criptografia
@@ -64,10 +67,10 @@ function criptografarTexto() {
   var textoOriginal = document.getElementById("textoOriginal").value;
 
   //verifica se há letras maiúsculas ou caracteres
-  if (/[^a-z]/.test(textoOriginal)){
+  if (/[^a-z\s]/.test(textoOriginal)) {
     alert("Por favor, use Apenas Letras minúsculas e sem acentos.");
 
-    return;// sai da função se não cumprir a condição
+    return; // sai da função se não cumprir a condição
   }
 
   //criptografa a escrita do usuário
@@ -103,5 +106,13 @@ function copiarTexto() {
       // Trata qualquer erro que possa ocorrer
       console.error("Erro ao copiar o texto: ", err);
     });
+
+    limpaCampo()
+}
+
+function limpaCampo(){
+  var textoLimpo = " "
+
+  document.getElementById("exibe__texto").value = textoLimpo
 }
 //Desafio completo de criptografia realizado para alura em parceria com a oracle next education #challengeonedecodificador5

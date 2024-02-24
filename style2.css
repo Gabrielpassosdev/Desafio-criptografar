@@ -148,6 +148,7 @@ button:hover {
   font-family: "Sixtyfour", sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
+  resize: none;
 }
 
 .conteudo__texto {
