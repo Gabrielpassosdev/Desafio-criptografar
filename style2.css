@@ -177,6 +177,16 @@ button:hover {
   text-align: center;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(48, 48, 48);
+  color: white;
+  text-align: center;
+}
+
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   .conteudo__texto__button {
     display: inline-block;

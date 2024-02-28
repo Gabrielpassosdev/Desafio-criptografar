@@ -107,12 +107,12 @@ function copiarTexto() {
       console.error("Erro ao copiar o texto: ", err);
     });
 
-    limpaCampo()
+  limpaCampo();
 }
 
-function limpaCampo(){
-  var textoLimpo = " "
+function limpaCampo() {
+  var textoLimpo = " ";
 
-  document.getElementById("exibe__texto").value = textoLimpo
+  document.getElementById("exibe__texto").value = textoLimpo;
 }
 //Desafio completo de criptografia realizado para alura em parceria com a oracle next education #challengeonedecodificador5
