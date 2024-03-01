@@ -177,26 +177,12 @@ button:hover {
   text-align: center;
 }
 
-footer {
-  background-color: rgb(48, 48, 48);
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-  width: 100%;
-  height: 30px;
-  line-height: 5px;
-  margin-top: 70px;
-  bottom: 0;
-}
+
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   .conteudo__texto__button {
     display: inline-block;
     margin: auto;
-  }
-  footer {
-    position: fixed;
-    margin-top: 120px;
   }
 }
 
@@ -207,9 +193,7 @@ footer {
     display: flex;
   }
 
-  footer {
-    position: fixed;
-  }
+ 
 
   .button__copiar {
     width: 330px;
